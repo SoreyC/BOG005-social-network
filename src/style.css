@@ -1,0 +1,1241 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --main-color-white: #FFFFFF;
+    --color-gray-opacity-80: #878787;
+    --b-main-color-blue: #042635;
+    --b-color-blue-dark: #01131C;
+    --w-color-blue-medium: #014B6C;
+    --w-color-blue-medium-opacity-60-014B6C: #014B6C;
+    --w-color-blue-light-buttons: #80A5B6;
+    --w-hight-color-yellow: #FBFE5D;
+    --w-hover-color-yellow: #BDC000;
+    --w-active-color-yellow: #989B00;
+    --w-red-light: #F56F6F;
+    --w-red-intense: #EA4335;
+    --letters: 'Noto Sans', sans-serif;
+    --Letters-logo-horizontal: 'Contrail One', cursive;
+    --img-welcome: url("img/imagenFondo.png");
+    --img-wall: url("img/fondoMuroCelular.png");
+
+
+
+    /* Peso de Letras 
+Titulos -> Bold
+Parrafos -> Regular
+*/
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* Mobile inicio */
+p {
+    font-family: var(--letters);
+}
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--w-color-blue-medium);
+}
+
+
+.body-wall {
+    width: 100vw;
+    height: 100vh;
+    background-image: var(--img-wall);
+}
+
+
+/*Inicio Welcome*/
+.contentPage {
+    width: 100%;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    display: block;
+    width: 7.0625rem;
+    height: 7.0625rem;
+}
+
+.headerClass {
+    background-image: var(--img-welcome);
+    background-repeat: no-repeat;
+    background-position: -100px -500px;
+    width: 100vw;
+    height: 55vh;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+
+.figureWelcome {
+    width: 100%;
+    display: block;
+    justify-content: flex-end;
+
+}
+
+.sectionWelcome {
+    width: 100vw;
+    height: 39vh;
+}
+
+.title {
+    font-family: var(--Letters-logo-horizontal);
+    color: var(--main-color-white);
+    font-weight: 400;
+    font-size: 1.5625rem;
+}
+
+.articleWelcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--main-color-white);
+    font-family: var(--letters);
+    width: 100vw;
+    height: 35vh;
+    text-align: center;
+}
+
+.anotherfigureWelcome {
+    display: none;
+}
+
+.loginButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--w-hight-color-yellow);
+    color: var(--w-color-blue-medium);
+    font-size: 1rem;
+    font-weight: 700;
+    width: 18rem;
+    height: 2.75rem;
+    border-radius: 0.5625rem;
+    letter-spacing: 0.0625rem;
+    border: none;
+}
+
+.loginButton:hover {
+    background-color: var(--w-hover-color-yellow);
+    color: var(--b-main-color-blue);
+}
+
+.loginButton:active {
+    background-color: var(--w-active-color-yellow);
+    color: var(--main-color-white);
+}
+
+.loginButtonRegister {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--letters);
+    background-color: var(--w-hight-color-yellow);
+    color: var(--w-color-blue-medium);
+    font-size: 1rem;
+    font-weight: 700;
+    height: 2.75rem;
+    border-radius: 0.5625rem;
+    letter-spacing: 0.0625rem;
+    border: none;
+}
+
+.loginButtonRegister1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--letters);
+    background-color: var(--w-hight-color-yellow);
+    color: var(--w-color-blue-medium);
+    font-size: 1rem;
+    font-weight: 700;
+    width: 7.5rem;
+    height: 2.75rem;
+    border-radius: 0.5625rem;
+    letter-spacing: 0.0625rem;
+    border: none;
+}
+
+.signIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color-white);
+    font-size: 1rem;
+    width: 18rem;
+    height: 2.75rem;
+    border: solid 0.0625rem;
+    border-radius: 0.5625rem;
+    letter-spacing: 0.0625rem;
+    background-color: var(--w-color-blue-medium);
+}
+
+.signIn:hover {
+    border: solid 0.0625rem;
+    background-color: var(--b-main-color-blue);
+    color: var(--main-color-white);
+}
+
+.signIn:active {
+    border: solid 0.0625rem;
+    background-color: var(--b-main-color-blue);
+    color: var(--main-color-white);
+}
+
+.continue {
+    color: var(--main-color-white);
+    text-decoration: underline;
+    letter-spacing: 0.0625rem;
+    font-size: 0.9rem;
+}
+
+.continue:active {
+    color: var(--color-gray-opacity-80);
+}
+
+.headerClassInsignIn {
+    display: none;
+}
+
+/*Fin welcome*/
+
+
+/* Estilos página de registro*/
+.logoSignIn {
+    display: flex;
+}
+
+.logoHorizontal {
+    width: 8rem;
+}
+
+.textLogo {
+    color: var(--main-color-white);
+    font-family: var(--Letters-logo-horizontal);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    transform: translateX(-22px);
+}
+
+.viewSignIn {
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.viewUserSignIn {
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerClassSignIn {
+    display: none;
+}
+
+.formSignIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--main-color-white);
+    font-family: var(--letters);
+    width: 100vw;
+    height: 70vh;
+    font-size: 1.3rem;
+    align-self: center;
+}
+
+.formUserSignIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--main-color-white);
+    font-family: var(--letters);
+    width: 100vw;
+    height: 50vh;
+    font-size: 1.3rem;
+    align-self: center;
+}
+
+#name,
+#user,
+#userSi,
+#email,
+#passwordSi,
+#password {
+    border: none;
+    border-bottom: solid 0.125rem var(--main-color-white);
+    width: 80vw;
+    height: 2.5rem;
+    display: flex;
+    background-color: var(--w-color-blue-medium);
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+    color: var(--main-color-white);
+    padding-left: 1rem;
+}
+
+::placeholder {
+    width: 80%;
+    color: var(--main-color-white);
+    font-size: 1.3rem;
+    opacity: 0.2;
+}
+
+.o {
+    color: var(--main-color-white);
+    height: 5vh;
+    font-size: 1.5rem;
+}
+
+.GoogleIcon {
+    width: 1.2rem;
+}
+
+.googleSignIn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1rem;
+    background-color: var(--main-color-white);
+    width: 18rem;
+    height: 2.75rem;
+    border: solid 0.0625rem;
+    border-color: var(--main-color-white);
+    color: var(--w-color-blue-medium);
+    border-radius: 0.5625rem;
+    letter-spacing: 0.0625rem;
+}
+
+.submitSignIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background-color: var(--w-color-blue-medium);
+    width: 18rem;
+    height: 2.75rem;
+    border: solid 0.0625rem;
+    border-color: var(--main-color-white);
+    color: var(--main-color-white);
+    border-radius: 0.5625rem;
+    letter-spacing: 0.0625rem;
+}
+
+.submitSignIn:hover {
+    border: solid 0.0625rem;
+    background-color: var(--w-hight-color-yellow);
+    color: var(--w-color-blue-medium);
+    font-weight: bold;
+}
+
+.submitSignIn:active {
+    border: none;
+    background-color: var(--w-active-color-yellow);
+    color: var(--main-color-white);
+}
+
+.itemsInput {
+    height: 5.3125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.userRegister {
+    font-family: var(--letters);
+    text-align: center;
+}
+
+.errorMessageEmail {
+    color: #F56F6F;
+    font-size: 0.9rem;
+}
+
+.errorMessagePassword {
+    color: #F56F6F;
+    font-size: 0.9rem;
+}
+
+.errorLabelInput {
+    color: #F56F6F;
+    font-size: 1.3rem;
+}
+
+/*Fin página de registro*/
+
+
+/*Estilos para el muro*/
+
+.shareForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+    margin: 1rem;
+    height: 30vh;
+}
+
+.textarea {
+    background-color: var(--b-main-color-blue);
+    color: var(--main-color-white);
+    border-radius: 6px;
+    border: none;
+    height: 20vh;
+    width: 80vw;
+}
+
+.textarea::placeholder {
+    color: var(--main-color-white);
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.shareFormButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--w-color-blue-medium);
+    border: none;
+    font-size: 1rem;
+    width: 16rem;
+    height: 2.75rem;
+    border-radius: 0.5625rem;
+    letter-spacing: 0.0625rem;
+    background-color: var(--w-hight-color-yellow);
+}
+
+.logoWall {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 1.5rem;
+    background-color: var(--w-color-blue-medium);
+}
+
+.scroll {
+    overflow: scroll;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.logoHorizontalWall {
+    width: 4rem;
+    height: 4rem;
+}
+
+.textLogoWall {
+    color: var(--main-color-white);
+    font-family: var(--Letters-logo-horizontal);
+    font-size: 1.5rem;
+    margin-left: 0.25rem;
+
+}
+
+.exitButtonClass {
+    background-color: transparent;
+    border: none;
+}
+
+.ri-logout-box-r-fill {
+    color: var(--w-color-blue-light-buttons);
+    font-size: 2rem;
+}
+
+.wallOfPublication {
+    width: 80vw;
+}
+
+.introUser {
+    display: flex;
+    flex-direction: column;
+    margin: 0.7rem 2.6rem;
+    color: var(--w-hight-color-yellow);
+    word-break: break-all;
+}
+
+.titleWall {
+    font-family: var(--Letters-logo-horizontal);
+    font-size: 1.5rem;
+    letter-spacing: 0.08rem;
+}
+
+.subtitulo {
+    font-family: var(--letters);
+    font-size: 0.9rem;
+}
+
+#postsContainerId {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postsCards {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: auto;
+    background-color: var(--main-color-white);
+    border-radius: 0.6625rem;
+    margin: 1rem;
+    padding: 0.8rem;
+    align-items: flex-end;
+
+}
+
+::-webkit-scrollbar {
+    background: none;
+}
+
+::-webkit-scrollbar-corner {
+    background: none;
+}
+
+#headerPost {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+
+.userTitleName {
+    font-weight: bolder;
+    color: var(--b-main-color-blue);
+    margin-left: 0.9rem;
+}
+
+
+#post {
+    color: var(--b-color-blue-dark);
+    width: 74vw;
+    padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+    word-break: break-all;
+}
+
+.fa-circle-user:before {
+    content: "\f2bd";
+    font-size: 2.3rem;
+    color: var(--b-main-color-blue);
+}
+
+.actionContainer {
+    width: 13vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.like {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.like p {
+    color: var(--w-red-intense);
+}
+
+.fa-heart {
+    color: #EA4335;
+}
+
+.fa-comment-dots {
+    color: var(--w-color-blue-medium);
+}
+
+.deletePost {
+    background-color: var(--main-color-white);
+    border: none;
+}
+
+.fa-trash-can {
+    color: var(--w-color-blue-medium);
+    font-size: 1rem;
+}
+
+.editPost {
+    background-color: var(--main-color-white);
+    border: none;
+}
+
+.fa-pen-to-square {
+    color: var(--w-color-blue-medium);
+    font-size: 1rem;
+}
+
+/* Fin Mobile */
+
+/* Inicio tablet */
+@media (min-width: 768px) and (max-width: 992px) {
+    .contentPage {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: var(--w-color-blue-medium);
+    }
+
+    .headerClass {
+        background-position: -133px -185px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        clip-path: circle(67.8% at -23% 50%);
+        width: 50%;
+        height: 100%;
+    }
+
+    .figureWelcome {
+        display: none;
+    }
+
+    .logo {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .sectionWelcome {
+        width: 50%;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .articleWelcome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        color: var(--main-color-white);
+        font-family: var(--letters);
+        width: 100%;
+        height: 58%;
+        text-align: center;
+
+    }
+
+    .title {
+        font-family: 'Contrail One', cursive;
+        color: var(--main-color-white);
+        font-weight: 400;
+        font-size: 2.2rem;
+    }
+
+    .welcomeText {
+        font-size: 1.775rem;
+    }
+
+    .anotherfigureWelcome {
+        display: block;
+    }
+
+    .loginButton {
+        font-size: 1.125rem;
+        font-weight: 700;
+        width: 20.1875rem;
+        height: 3rem;
+    }
+
+    .signIn {
+        font-size: 1.125rem;
+        font-weight: 700;
+        width: 20.1875rem;
+        height: 3rem;
+    }
+
+    .continue {
+        letter-spacing: 0.0825rem;
+        font-size: 1.125rem;
+
+    }
+
+    /* Estilos página de registro*/
+
+    .headerClassSignIn {
+        display: none;
+    }
+
+    /* Estilos muro */
+
+    .actionContainer {
+        width: 6vw;
+    }
+
+    .introUser {
+        width: 80vw;
+    }
+}
+
+/* Fin tablet */
+
+/* Inicio desktop-medio */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .contentPage {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: var(--w-color-blue-medium);
+    }
+
+    /*Inicio welcome*/
+    .headerClass {
+        background-position: -133px -185px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        clip-path: circle(67.8% at -8% 51%);
+        width: 50%;
+        height: 100vh;
+    }
+
+    .figureWelcome {
+        width: 84vw;
+        height: 18.5rem;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .logo {
+        width: 17rem;
+        height: 17rem;
+    }
+
+    .sectionWelcome {
+        width: 50%;
+        height: 77%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .articleWelcome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: var(--main-color-white);
+        font-family: var(--letters);
+        width: 100%;
+        height: 50%;
+        text-align: center;
+
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .welcomeText {
+        font-size: 1.8rem;
+    }
+
+    .anotherfigureWelcome {
+        display: block;
+    }
+
+    .loginButton {
+        font-size: 1.4rem;
+        width: 25.171875rem;
+        height: 4rem;
+    }
+
+    .signIn {
+        font-size: 1.4rem;
+        width: 25.171875rem;
+        height: 4rem;
+    }
+
+    .continue {
+        letter-spacing: 0.0825rem;
+        font-size: 1.4rem;
+    }
+
+    .headerClassInsignIn {
+        display: block;
+        background-image: var(--img-welcome);
+        background-repeat: no-repeat;
+        background-position: -133px -185px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        float: left;
+        clip-path: circle(67.8% at -4% 50%);
+        width: 50%;
+        height: 100%;
+    }
+
+    .viewSignIn {
+        height: 90vh;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formSignIn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: var(--main-color-white);
+        font-family: var(--letters);
+        width: 85%;
+        height: 70vh;
+        font-size: 1.3rem;
+        align-self: center;
+    }
+
+    .formUserSignIn {
+        width: 90vw;
+        height: 50vh;
+    }
+
+    .itemsInput {
+        height: 5.3125rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #name,
+    #user,
+    #userSi,
+    #email,
+    #passwordSi,
+    #password {
+        border: none;
+        border-bottom: solid 0.125rem var(--main-color-white);
+        width: 90%;
+        height: 2.5rem;
+        display: flex;
+        background-color: var(--w-color-blue-medium);
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1rem;
+        color: var(--main-color-white);
+        padding-left: 1rem;
+    }
+
+    /* Estilos muro */
+    .actionContainer {
+        width: 4vw;
+    }
+
+    .introUser {
+        width: 80vw;
+    }
+}
+
+/* Fin desktop-medio */
+
+
+/* Inicio desktop-grande */
+@media (min-width: 1201px) and (max-width: 1500px) {
+    .contentPage {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: var(--w-color-blue-medium);
+    }
+
+    .headerClass {
+        background-position: -133px -185px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        clip-path: circle(67.8% at 10% 51%);
+        width: 50%;
+        height: 100vh;
+    }
+
+    .figureWelcome {
+        width: 84vw;
+        height: 18.5rem;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .logo {
+        width: 17rem;
+        height: 17rem;
+    }
+
+    .sectionWelcome {
+        width: 50%;
+        height: 77%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .articleWelcome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: var(--main-color-white);
+        font-family: var(--letters);
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .welcomeText {
+        font-size: 1.8rem;
+    }
+
+    .anotherfigureWelcome {
+        display: block;
+    }
+
+    .loginButton {
+        font-size: 1.4rem;
+        font-weight: 700;
+        width: 25.171875rem;
+        height: 4rem;
+    }
+
+    .signIn {
+        font-size: 1.4rem;
+        font-weight: 700;
+        width: 25.171875rem;
+        height: 4rem;
+    }
+
+    .continue {
+        letter-spacing: 0.0825rem;
+        font-size: 1.4rem;
+
+    }
+
+    .headerClassInsignIn {
+        display: block;
+        background-image: var(--img-welcome);
+        background-repeat: no-repeat;
+        background-position: -133px -185px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        float: left;
+        clip-path: circle(67.8% at 10% 50%);
+        width: 50%;
+        height: 100%;
+    }
+
+    .viewSignIn {
+        height: 90vh;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .formSignIn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: var(--main-color-white);
+        font-family: var(--letters);
+        width: 85%;
+        height: 70vh;
+        font-size: 1.3rem;
+        align-self: center;
+    }
+
+    .formUserSignIn {
+        width: 50vw;
+        height: 50vh;
+    }
+
+    .itemsInput {
+        height: 5.3125rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #name,
+    #user,
+    #userSi,
+    #email,
+    #passwordSi,
+    #password {
+        border: none;
+        border-bottom: solid 0.125rem var(--main-color-white);
+        width: 90%;
+        height: 2.5rem;
+        display: flex;
+        background-color: var(--w-color-blue-medium);
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1rem;
+        color: var(--main-color-white);
+        padding-left: 1rem;
+    }
+
+    .actionContainer {
+        width: 3vw;
+    }
+
+    .introUser {
+        width: 80vw;
+    }
+}
+
+@media (min-width: 1501px) and (max-width: 4000px) {
+    .contentPage {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: var(--w-color-blue-medium);
+    }
+
+    .headerClass {
+        background-position: -133px -185px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        clip-path: circle(67.8% at 22% 51%);
+        width: 50%;
+        height: 100vh;
+    }
+
+
+    .figureWelcome {
+        width: 84vw;
+        height: 18.5rem;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .logo {
+        width: 17rem;
+        height: 17rem;
+    }
+
+    .sectionWelcome {
+        width: 50%;
+        height: 77%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .articleWelcome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: var(--main-color-white);
+        font-family: var(--letters);
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+
+    .title {
+        font-family: 'Contrail One', cursive;
+        color: var(--main-color-white);
+        font-weight: 400;
+        font-size: 3rem;
+    }
+
+    .welcomeText {
+        font-size: 1.8rem;
+    }
+
+    .anotherfigureWelcome {
+        display: block;
+    }
+
+    .loginButton {
+        font-size: 1.4rem;
+        font-weight: 700;
+        width: 25.171875rem;
+        height: 4rem;
+    }
+
+
+    .signIn {
+        font-size: 1.4rem;
+        font-weight: 700;
+        width: 25.171875rem;
+        height: 4rem;
+    }
+
+    .continue {
+        letter-spacing: 0.0825rem;
+        font-size: 1.4rem;
+
+    }
+
+    .headerClassInsignIn {
+        display: block;
+        background-image: var(--img-welcome);
+        background-repeat: no-repeat;
+        background-position: -133px -185px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        float: left;
+        clip-path: circle(67.8% at 21% 50%);
+        width: 50%;
+        height: 100%;
+    }
+
+    .viewSignIn {
+        height: 90vh;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .viewUserSignIn {
+        width: 50%;
+        height: 80vh;
+    }
+
+    .formSignIn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: var(--main-color-white);
+        font-family: var(--letters);
+        width: 85%;
+        height: 70vh;
+        font-size: 1.3rem;
+        align-self: center;
+    }
+
+    .formUserSignIn {
+        width: 90%;
+        height: 50vh;
+    }
+
+    .itemsInput {
+        height: 5.3125rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #name,
+    #user,
+    #userSi,
+    #email,
+    #passwordSi,
+    #password {
+        border: none;
+        border-bottom: solid 0.125rem var(--main-color-white);
+        width: 50vw;
+        height: 2.5rem;
+        display: flex;
+        background-color: var(--w-color-blue-medium);
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1rem;
+        color: var(--main-color-white);
+        padding-left: 1rem;
+    }
+
+    .logoHorizontal {
+        width: 10rem;
+    }
+
+    .textLogo {
+        color: var(--main-color-white);
+        font-family: var(--Letters-logo-horizontal);
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+        transform: translateX(-28px);
+    }
+
+    .topBar {
+        margin: 1.5rem 5.5rem;
+    }
+
+    .actionContainer {
+        width: 2.5vw;
+    }
+
+    .introUser {
+        width: 80vw;
+    }
+
+    .titleWall {
+        font-size: 2rem
+    }
+
+    .subtitulo {
+        font-size: 1.5rem;
+    }
+
+    #post {
+        width: 77vw;
+    }
+}
