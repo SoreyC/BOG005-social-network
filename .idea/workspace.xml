@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7db0241b-419d-4c1f-bc4c-fb99b45ebae4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/test/userSignIn.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/userSignIn.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firebase/__mocks__/authenticationFirebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebase/__mocks__/authenticationFirebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firebase/__mocks__/firestoreFirebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebase/__mocks__/firestoreFirebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firebase/authenticationFirebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebase/authenticationFirebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firebase/storageFirebase.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +38,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665229290178</updated>
       <workItem from="1665229296444" duration="135000" />
+      <workItem from="1665433404008" duration="33000" />
     </task>
     <servers />
   </component>

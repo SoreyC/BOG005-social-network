@@ -33,7 +33,10 @@ const displayUserData = () => {
           document.querySelector('#titleId').innerHTML += `<h1 id="showUserEmailId" class="greetingUser">Hola, resgístrate en nuestra red social</h1>`;
           document.querySelector('#exitButtonId').style.display = "none"
           form.style.display="none"
+          if(buttonRegister){
           buttonRegister.style.display = "block"
+          }
+          
         }
       }
     });
