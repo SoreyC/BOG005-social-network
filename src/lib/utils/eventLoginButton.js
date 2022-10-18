@@ -20,7 +20,6 @@ const eventLoginButton = () => {
         })
           .catch((error) => {
             const errorCode = error.code;
-            console.log(errorCode)
             const errorMessageEmail = document.querySelector("#errorMessageEmailId")
             const errorPassWord = document.querySelector("#errorMessagePasswordId")
             const contentInputEmail = document.querySelector("#contentPageId > section > form > article:nth-child(1)")
@@ -47,7 +46,3 @@ const eventLoginButton = () => {
 };
 
 export { eventLoginButton };
-
-//auth/user-not-found
-//auth/invalid-email
-//auth/wrong-password
